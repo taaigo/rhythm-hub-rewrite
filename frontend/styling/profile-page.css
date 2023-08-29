@@ -1,0 +1,19 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_username {
+    color: #ffa8ed;
+    font-size: 40px;
+    margin: 0 20px;
+    display: inline;
+    margin-top: auto;
+}
+
+.image_profile-image {
+    object-fit: cover;
+    border-radius: 30px;
+    width: 140px;
+    height: 140px;
+}

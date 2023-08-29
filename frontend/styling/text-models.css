@@ -1,0 +1,23 @@
+.text_page-title {
+    font-size: 30px;
+    margin: 6px 0;
+    color: #f572e3;
+}
+
+.text_error {
+    font-size: 16px;
+    text-align: center;
+    color: #e01111;
+}
+
+.text_warning {
+    font-size: 16px;
+    text-align: center;
+    color: #e0cf11;
+}
+
+.text_success-text {
+    font-size: 16px;
+    text-align: center;
+    color: #11e014;
+}
