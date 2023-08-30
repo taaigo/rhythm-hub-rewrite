@@ -3,7 +3,7 @@ session_start();
 include '../../../backend/import.php';
 include '../../../backend/functions/register.php';
 
-register_user();
+$register_message = register_user();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,7 @@ register_user();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo import_styling(['default', 'text-models', 'navbar', 'register-page']) ?>
+    <title>taigo.dev - sign up</title>
 </head>
 <body>
 <?php include '../../elements/navbar.php' ?>
@@ -21,10 +22,11 @@ register_user();
             <div class="arrange_flex">
                 <div class="flex-top">
                     <?php
-                    switch ( register_user() )
+                    switch ( $register_message )
                     {
                         case 1:
-                            echo "<div class='text_success-text'>Successfully created account</div>";
+                            echo '<div class="text_success-text">Successfully created account</div>
+                                  <meta http-equiv="refresh" content="1; URL=../profile/" >';
                             break;
 
                         case 2:
@@ -39,7 +41,7 @@ register_user();
                     <input class="input_text-field" placeholder="Repeat password" type="password" name="repeated-password">
                 </div>
                 <div class="flex-bottom">
-                    <input class="input_button" type="submit" value="Login" style="float: right">
+                    <input class="input_button" type="submit" value="Sign up" style="float: right">
                 </div>
             </div>
         </form>

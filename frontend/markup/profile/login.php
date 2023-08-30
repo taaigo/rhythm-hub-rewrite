@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo import_styling(['default', 'text-models', 'navbar', 'login-page']) ?>
+    <title>taigo.dev - sign in</title>
 </head>
 <body>
 <?php include '../../elements/navbar.php' ?>
@@ -19,11 +20,11 @@
                     switch ( $login_message )
                     {
                         case 1:
-                            echo "<div class='error-text'>Combination doesn't exist</div>";
+                            echo "<div class='text_error'>Combination doesn't exist</div>";
                             break;
 
                         case 2:
-                            echo "<div class='success-text'>Successfully logged in</div>";
+                            echo "<div class='text_success-text'>Successfully logged in</div>";
                             break;
                     }
 

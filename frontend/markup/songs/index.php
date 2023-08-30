@@ -8,7 +8,7 @@ include '../../../backend/import.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo import_styling(['default', 'navbar']) ?>
-    <title>taigo.dev</title>
+    <title>taigo.dev - song listing</title>
 </head>
 <body>
     <?php include '../../elements/navbar.php' ?>

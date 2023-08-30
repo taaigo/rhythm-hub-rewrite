@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.arrange_flex {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#settings_change-profile-image {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+}
+
+#change-profile-image-title {
+    text-align: center;
+}
+
+.flex_bottom-pfp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label {
+    padding: 14px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #d740be;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    transition: ease 300ms;
+    text-align: center;
+    height: fit-content;
+}
+
+label:hover {
+    background-color: #f658ee;
+    cursor: pointer;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}

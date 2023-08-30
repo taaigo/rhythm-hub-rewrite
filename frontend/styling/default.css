@@ -19,6 +19,7 @@ body {
 
 .input_button {
     border: none;
+    text-decoration: none;
     background-color: #d740be;
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;

@@ -12,7 +12,7 @@ function register_user()
             return 2;
         }
 
-        $mysqli = new mysqli("localhost", "root", "", "songs");
+        $mysqli = new mysqli("localhost", "root", "", "taigo.dev");
 
         if ($mysqli -> connect_errno)
         {
