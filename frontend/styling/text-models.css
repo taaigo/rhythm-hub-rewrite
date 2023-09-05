@@ -4,6 +4,16 @@
     color: #f572e3;
 }
 
+.text_sub {
+    font-size: 18px;
+    color: #cbcbcb;
+}
+
+.text_sub_grey {
+    font-size: 18px;
+    color: #9a9a9a;
+}
+
 .text_error {
     font-size: 16px;
     text-align: center;

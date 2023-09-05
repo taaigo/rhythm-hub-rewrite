@@ -27,7 +27,6 @@ body {
     border-radius: 6px;
     transition: ease 300ms;
     text-align: center;
-    margin: 0px;
     padding: 14px 20px;
 }
 .input_button:hover {
@@ -49,4 +48,8 @@ body {
     color: #999;
     box-sizing: border-box;
     padding: 24px 10px;
+}
+
+a {
+    text-decoration: none;
 }
