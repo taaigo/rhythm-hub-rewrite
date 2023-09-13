@@ -11,12 +11,12 @@ function get_comments($song_id)
     {
         while ($comment = $result -> fetch_object())
         {
-            $user = fetchUser($comment->user);
+            $user = fetch_user($comment->user);
             $out .= '
                 <div class="comment_content">
                    <div id="head">
                         <div id="user">
-                            <img class="comment_user_image" src="../../../media/profile-images/'.find_avatar($user->id).'.png">
+                            <img class="comment_user_image" src="../../../media/profile-images/'.find_avatar($comment->user).'.png">
                             <div class="username">'.$user->username.'</div>
                         </div>
                         <div id="date">'.$comment->date.'</div>
@@ -31,9 +31,9 @@ function get_comments($song_id)
     }
 }
 
-function fetchUser($user_id)
+function fetch_user($user_id)
 {
-    $mysqli = new mysqli("localhost", "root", "", "songs");
+    $mysqli = new mysqli("localhost", "root", "", "taigo.dev");
     $sql = "SELECT * FROM users WHERE id='$user_id'";
     $user = $mysqli->query($sql)->fetch_object();
     return $user;

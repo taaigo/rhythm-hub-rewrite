@@ -14,6 +14,7 @@ include '../../../backend/import.php';
     <?php include '../../elements/navbar.php' ?>
 
     <div class="container">
+        <div class="text_sub">OUT OF IDEAS</div>
     </div>
 </body>
 </html>

@@ -14,14 +14,20 @@ include '../../../../backend/import.php';
 <?php //include '../../../elements/navbar.php' ?>
 <nav>
     <ul class="navbar">
-        <li class="navbar">Profile settings</li>
+        <nav id="settings_back_button">
+            <li id="settings_back_button-li">
+                <div>
+                    <a href="../" style="text-decoration: none"><div class="input_button">Go back</div></a>
+                </div>
+            </li>
+        </nav>
+        <div id="vertical-text">
+            <li class="navbar" id="settings_navbar-text">Profile settings</li>
+        </div>
     </ul>
 </nav>
 <div class="container">
     <div class="arrange_flex">
-        <div id="settings_back_button">
-            <a href="../" style="text-decoration: none"><div class="input_button">Go back</div></a>
-        </div>
         <form action="upload-profile-image.php" method="post" enctype="multipart/form-data">
             <div id="settings_change-profile-image">
                 <div class="flex_top-pfp">

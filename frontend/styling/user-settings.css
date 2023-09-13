@@ -28,10 +28,6 @@
     width: 55%;
 }
 
-#settings_back_button {
-    width: 110px;
-}
-
 .flex_bottom-pfp {
     display: flex;
     justify-content: space-evenly;
@@ -81,10 +77,6 @@ form {
     padding: 12px;
 }
 
-#settings_userid_text {
-    text-align: right;
-}
-
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -99,10 +91,32 @@ li {
     float: left;
     display: block;
     padding: 14px;
-    margin-left: 22px;
-    margin-right: 10px;
     color: white;
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
+}
+
+#settings_userid_text {
+    text-align: right;
+}
+
+#settings_back_button-li {
+    width: 110px;
+}
+
+#settings_navbar-text {
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#vertical-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
