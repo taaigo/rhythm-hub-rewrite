@@ -1,6 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    min-width: 700px;
     width: 35%;
 }
 
@@ -19,17 +20,31 @@
     justify-content: center;
 }
 
-#change-profile-image-title {
+.text_page-title {
     text-align: center;
+}
+
+#settings_change-username {
+    width: 55%;
+}
+
+#settings_back_button {
+    width: 110px;
 }
 
 .flex_bottom-pfp {
     display: flex;
     justify-content: space-evenly;
+    width: 70%;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
 }
 
 label {
-    padding: 14px 20px;
+    padding: 14px 0;
     cursor: pointer;
     border: none;
     background-color: #d740be;
@@ -40,6 +55,7 @@ label {
     transition: ease 300ms;
     text-align: center;
     height: fit-content;
+    width: 150px;
 }
 
 label:hover {
@@ -48,7 +64,45 @@ label:hover {
 
 }
 
+.flex_bottom-username {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input_text-field {
+    margin: 0;
+}
+
 form {
     display: flex;
     justify-content: center;
+    padding: 12px;
+}
+
+#settings_userid_text {
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #494949;
+    padding 14px;
+    box-shadow: rgba(0, 0, 0, 0.075) 5px 5px 10px;
+}
+
+li {
+    float: left;
+    display: block;
+    padding: 14px;
+    margin-left: 22px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
 }

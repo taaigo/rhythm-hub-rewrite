@@ -1,0 +1,67 @@
+.container {
+    width: 25%;
+    height: 375px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.arrange_flex {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.flex_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 100%;
+}
+
+.flex_center {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.text_page-title {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input_button {
+    height: 48px;
+}
+
+label {
+    padding: 14px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #d740be;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    transition: ease 300ms;
+    text-align: center;
+    height: fit-content;
+}
+
+label:hover {
+    background-color: #f658ee;
+}

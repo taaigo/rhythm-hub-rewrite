@@ -28,6 +28,7 @@ body {
     transition: ease 300ms;
     text-align: center;
     padding: 14px 20px;
+    cursor: pointer;
 }
 .input_button:hover {
     background-color: #f658ee;

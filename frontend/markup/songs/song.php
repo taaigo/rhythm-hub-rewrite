@@ -49,7 +49,7 @@ $_SESSION['song_id'] = $song->id;
             </div>
         </div>
     </div>
-    <form action="../php/upload_comment.php" method="post">
+    <form action="../../../backend/functions/upload_comment.php" method="post">
         <div class="comment_section">
             <div class="input_comment" id="commentsong">
                 <?php
@@ -63,7 +63,7 @@ $_SESSION['song_id'] = $song->id;
                 else
                 {
                     echo '
-                        <div class="containersubheadtext">You must be logged in to comment</div>
+                        <div class="text_page-title">You must be logged in to comment</div>
                     ';
                 }
                 ?>

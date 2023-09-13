@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../../../../backend/import.php';
-include '../../../../backend/functions/upload-profile-image.php';
+include '../../../../backend/functions/settings/upload-profile-image.php';
 $upload_message = upload_profile_image();
 ?>
 <!DOCTYPE html>
@@ -39,26 +39,26 @@ $upload_message = upload_profile_image();
             {
                 case 1:
                     echo '<div class="text_error">file was not an image</div>';
-                    echo '<div class="text_page-title">Your file was not uploaded.</div>';
+                    echo '<div class="text_page-title">Your image was not uploaded.</div>';
                     break;
 
                 case 2:
                     echo '<div class="text_error">file size too is large</div>';
-                    echo '<div class="text_page-title">Your file was not uploaded.</div>';
+                    echo '<div class="text_page-title">Your image was not uploaded.</div>';
                     break;
 
                 case 3:
                     echo '<div class="text_error">unknown error</div>';
-                    echo '<div class="text_page-title">Your file was not uploaded.</div>';
+                    echo '<div class="text_page-title">Your image was not uploaded.</div>';
                     break;
 
                 case 4:
-                    echo '<div class="text_page-title">Your file has successfully been uploaded.</div>';
+                    echo '<div class="text_page-title">Your image has successfully been uploaded.</div>';
                     break;
 
                 case 1:
                     echo '<div class="text_error">unknown error</div>';
-                    echo '<div class="text_page-title">Your file was not uploaded.</div>';
+                    echo '<div class="text_page-title">Your image was not uploaded.</div>';
                     break;
             }
             ?>
