@@ -28,6 +28,14 @@ $out = change_username();
                 case 2:
                     echo '<div class="text_page-title">Something went wrong.</div>';
                     break;
+
+                case 3:
+                    echo '<div class="text_page-title">Something went wrong.</div><div class="text_error" style="text-align: left">Your new username can\'t be empty</div>';
+                    break;
+
+                case 4:
+                    echo '<div class="text_page-title">Something went wrong.</div><div class="text_error" style="text-align: left">This username already exists</div>';
+                    break;
             }
             ?></div>
         <a href="../"><button class="input_button">Go to profile</button></a>
