@@ -25,6 +25,13 @@ function register_user()
             return;
         }
 
+        $sql = 'SELECT * FROM users WHERE username="'.$username.'"';
+
+        if ($mysqli->query($sql)->num_rows)
+        {
+            return 3;
+        }
+
         $sql = "INSERT INTO users (username, password)
             VALUES ('".$username."', '".$password."')";
 

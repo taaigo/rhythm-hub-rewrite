@@ -20,8 +20,7 @@ $register_message = register_user();
             <div class="arrange_flex">
                 <div class="flex-top">
                     <?php
-                    switch ( $register_message )
-                    {
+                    switch ( $register_message ) {
                         case 1:
                             echo '<div class="text_success-text">Successfully created account</div>
                                   <meta http-equiv="refresh" content="1; URL=../profile/" >';
@@ -29,6 +28,10 @@ $register_message = register_user();
 
                         case 2:
                             echo "<div class='text_error'>Passwords are not the same</div>";
+                            break;
+
+                        case 3:
+                            echo "<div class='text_error'>Username already exists</div>";
                             break;
                     }
 

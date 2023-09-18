@@ -28,6 +28,19 @@
     width: 55%;
 }
 
+#settings_profile_image {
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+#settings-page-profile-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .flex_bottom-pfp {
     display: flex;
     justify-content: space-evenly;

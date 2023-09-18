@@ -26,6 +26,9 @@ include '../../../../backend/import.php';
     </ul>
 </nav>
 <div class="container">
+    <div id="settings-page-profile-image">
+        <img id="settings_profile_image" src="/rhythm-hub/media/profile-images/<?php echo $_SESSION['user']->id ?>.png">
+    </div>
     <div class="arrange_flex">
         <form action="upload-profile-image.php" method="post" enctype="multipart/form-data">
             <div id="settings_change-profile-image">
