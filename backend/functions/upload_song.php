@@ -1,7 +1,7 @@
 <?php
 function upload_song()
 {
-    if ( isset($_POST['title']) && isset($_POST['artist']) && isset($_POST['bpm']))
+    if ( !empty($_POST['title']) && !empty($_POST['artist']) && !empty($_POST['bpm']))
     {
         $title = $_POST['title'];
         $artist = $_POST['artist'];

@@ -18,4 +18,6 @@ if (!empty($_POST['comment'])) {
     {
         $out = "Something went wrong while posting your comment";
     }
+} else {
+    redirect("frontend/markup/songs/song.php?id=".$song_id);
 }
