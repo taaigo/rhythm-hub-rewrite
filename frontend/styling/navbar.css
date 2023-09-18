@@ -63,3 +63,9 @@ input.nav:hover {
     width: 49px;
     margin-top: auto;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

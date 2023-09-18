@@ -8,9 +8,7 @@ $out = change_username();
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include '/opt/lampp/htdocs/rhythm-hub/backend/import-head.php'?>
     <?php echo import_styling(['default', 'navbar', 'text-models']) ?>
 </head>
 <body>

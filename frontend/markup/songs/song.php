@@ -25,10 +25,7 @@ $_SESSION['song_id'] = $song->id;
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <?php include '/opt/lampp/htdocs/rhythm-hub/backend/import-head.php'?>
     <?php echo import_styling(['default', 'navbar', 'text-models', 'song-page']); ?>
 </head>
 <body>
@@ -49,6 +46,8 @@ $_SESSION['song_id'] = $song->id;
             </div>
         </div>
     </div>
+</div>
+<div class="container" style="margin-top: 16px">
     <form action="../../../backend/functions/upload_comment.php" method="post">
         <div class="comment_section">
             <div class="input_comment" id="commentsong">

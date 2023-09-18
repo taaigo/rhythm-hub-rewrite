@@ -3,9 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include '/opt/lampp/htdocs/rhythm-hub/backend/import-head.php'?>
     <?php echo import_styling(['default', 'text-models', 'navbar', 'login-page']) ?>
     <title>taigo.dev - sign in</title>
 </head>
