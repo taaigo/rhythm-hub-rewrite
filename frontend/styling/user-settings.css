@@ -31,7 +31,7 @@
 #settings_profile_image {
     width: 140px;
     height: 140px;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 30px;
 }
 
