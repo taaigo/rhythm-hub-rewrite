@@ -27,6 +27,7 @@ $_SESSION['song_id'] = $song->id;
 <head>
     <?php include '/opt/lampp/htdocs/rhythm-hub/backend/import-head.php'?>
     <?php echo import_styling(['default', 'navbar', 'text-models', 'song-page']); ?>
+    <script src="functions.js"></script>
 </head>
 <body>
 <?php include '../../elements/navbar.php' ?>
@@ -45,6 +46,24 @@ $_SESSION['song_id'] = $song->id;
                 <div class="text_sub_grey">on <?php echo $song->date ?></div>
             </div>
         </div>
+        <?php
+            if (file_exists(get_files_by_extension("../../../media/song-audio/".$_SESSION['song_id']."", "flac,mp3,m4a,ogg")))
+            {
+                echo '
+             <div class="song_audio-card">
+            <audio id="audio-player" src="'.get_files_by_extension("../../../media/song-audio/".$_SESSION['song_id'], "flac,mp3,m4a,ogg").'"></audio>
+            <div class="song_audio-player-container">
+                <button id="play-button" class="input_button" onclick="play_song()">Play</button>
+            </div>
+
+            </div>
+                ';
+            }
+            else
+            {
+                echo '<div  class="text_sub">There is no audio avalible for this song.</div>';
+            }
+        ?>
     </div>
 </div>
 <div class="container" style="margin-top: 16px">

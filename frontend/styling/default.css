@@ -35,6 +35,10 @@ body {
     cursor: pointer;
 }
 
+.input_button:active {
+    background-color: #a82d77;
+}
+
 .input_text-field {
     font-family: 'Varela Round', sans-serif;
     border: none;

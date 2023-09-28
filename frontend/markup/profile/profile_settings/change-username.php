@@ -32,7 +32,7 @@ $out = change_username();
                     break;
 
                 case 4:
-                    echo '<div class="text_page-title">Something went wrong.</div><div class="text_error" style="text-align: left">This username already exists</div>';
+                    echo '<div class="text_page-title">Something went wrong.</div><div class="text_error" style="text-align: left">This username has already been taken</div>';
                     break;
             }
             ?></div>
