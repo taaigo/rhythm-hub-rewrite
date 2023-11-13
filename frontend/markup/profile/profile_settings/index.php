@@ -43,16 +43,14 @@ include '../../../../backend/import.php';
                 </div>
             </div>
         </form>
-        <form action="change-username.php" method="post" enctype="multipart/form-data">
-            <div id="settings_change-username">
+        <form class="settings_change-username" action="change-username.php" method="post" enctype="multipart/form-data">
                 <div class="flex_top-username">
                     <div class="text_page-title">Change username</div>
                 </div>
                 <div class="flex_bottom-username">
                     <input class="input_text-field" type="text" placeholder="New username" name="new_username">
-                    <input class="input_button" type="submit" value="Submit">
+                    <input id="input_button-changeusername" class="input_button" type="submit" value="Submit">
                 </div>
-            </div>
         </form>
         <div id="settings_footer">
             <div class="text_sub" id="settings_userid_text">UserID: <?php echo $_SESSION['user']->id ?></div>

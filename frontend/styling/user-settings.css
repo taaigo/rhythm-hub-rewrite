@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    min-width: 700px;
+    min-width: 480px;
     width: 35%;
 }
 
@@ -25,7 +25,12 @@
 }
 
 #settings_change-username {
-    width: 55%;
+    width: 19vw;
+}
+
+.flex_top-username {
+    display: flex;
+    justify-content: center;
 }
 
 #settings_profile_image {
@@ -41,10 +46,14 @@
     justify-content: center;
 }
 
+.settings_change-username {
+    flex-direction: column;
+}
+
 .flex_bottom-pfp {
     display: flex;
-    justify-content: space-evenly;
-    width: 70%;
+    justify-content: space-between;
+    width: 310px;
 }
 
 .flex_center {
@@ -74,10 +83,15 @@ label:hover {
 }
 
 .flex_bottom-username {
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 120px;
+}
+
+#input_button-changeusername {
+    margin: 0 auto;
+    width: 120px;
 }
 
 .input_text-field {

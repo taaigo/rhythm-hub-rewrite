@@ -1,6 +1,6 @@
 .container {
     width: 26%;
-    min-width: 366px;
+    min-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -37,6 +37,7 @@ body {
 
 .input_button:active {
     background-color: #a82d77;
+    text-shadow: #d740be 5px 5px;
 }
 
 .input_text-field {

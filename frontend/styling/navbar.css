@@ -45,6 +45,7 @@ input.nav {
 
 a.nav:hover {
     color: #ff7ff3;
+    text-shadow: #ff7ff275 0 0 5px;
 }
 
 input.nav:hover {

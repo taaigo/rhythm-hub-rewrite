@@ -23,7 +23,7 @@ $_SESSION['song_id'] = $song->id;
 ?>
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <?php include '/opt/lampp/htdocs/rhythm-hub/backend/import-head.php'?>
     <?php echo import_styling(['default', 'navbar', 'text-models', 'song-page']); ?>
@@ -51,7 +51,13 @@ $_SESSION['song_id'] = $song->id;
             {
                 echo '
              <div class="song_audio-card">
-            <audio id="audio-player" src="'.get_files_by_extension("../../../media/song-audio/".$_SESSION['song_id'], "flac,mp3,m4a,ogg").'"></audio>
+            <audio id="audio-player" src="'.get_files_by_extension("../../../media/song-audio/1
+            
+            
+            
+            
+            
+            ", "flac,mp3,m4a,ogg").'"></audio>
             <div class="song_audio-player-container">
                 <button id="play-button" class="input_button" onclick="play_song()">Play</button>
             </div>
